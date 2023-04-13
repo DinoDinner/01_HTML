@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableTag3</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 800;
+            border: 2px solid black;
+        }
+
+        table,
+        td,
+        th {
+            border: 2px solid black;
+        }
+
+        th,
+        td {
+            width: 120px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: teal;
+            color: white;
+        }
+
+        tbody {
+            background-color: #4db6ac;
+        }
+
+        tfoot {
+            background-color: #004d40;
+            font-weight: bolder;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+
+        <caption>
+            일별근무자
+        </caption>
+
+        <!-- table head -->
+        <thead>
+            <th>날짜</th>
+            <th>근무자</th>
+            <th>근무시간</th>
+        </thead>
+
+        <!-- table body -->
+        <tbody>
+            <td>03/02</td>
+            <td>김창수</td>
+            <td>근무시간</td>
+        </tbody>
+        <tbody>
+            <td>03/02</td>
+            <td>이아름</td>
+            <td>4</td>
+        </tbody>
+
+        <!-- table foot -->
+        <tfoot>
+            <td colspan="2">총 근무시간</td>
+            <td>12</td>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>

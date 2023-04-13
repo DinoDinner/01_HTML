@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableTag7</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            /* border-collapse: collapse 는 table의 셀 테두리가 2줄 형태로 나타내는 것을 방지 */
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            /* border(테두리 영역): 1px(두께) black(테두리 색) */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption> 고객님의 주문 내역</caption>
+        <tr>
+            <th>도서</th>
+            <th>수량</th>
+            <th>금액</th>
+        </tr>
+        <tr>
+            <td>부의 미래</td>
+            <td>1</td>
+            <td>19,800원</td>
+        </tr>
+        <tr>
+            <td>아이디어맨</td>
+            <td>1</td>
+            <td>15,000원</td>
+        </tr>
+        <tr>
+            <td colspan="2">총 주문 금액</td>
+            <!-- colspan(셀의 개수를 합침)="2"(셀 두개를 합침)  -->
+            <td>34,800원</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
